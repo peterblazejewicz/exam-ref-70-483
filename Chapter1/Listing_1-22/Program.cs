@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Chapter1
+namespace Chapter1.Listing_1_22
 {
     class Program
     {

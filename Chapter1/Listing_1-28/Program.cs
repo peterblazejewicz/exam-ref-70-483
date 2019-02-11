@@ -2,7 +2,7 @@
 using System.Collections.Concurrent;
 using System.Threading.Tasks;
 
-namespace Chapter1
+namespace Chapter1.Listing_1_28
 {
     class Program
     {

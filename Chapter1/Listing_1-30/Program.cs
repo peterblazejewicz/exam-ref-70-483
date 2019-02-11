@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Concurrent;
 
-namespace Chapter1
+namespace Chapter1.Listing_1_30
 {
     class Program
     {

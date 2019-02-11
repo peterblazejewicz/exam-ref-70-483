@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace Chapter1
+namespace Chapter1.Listing_1_10
 {
     class Program
     {
