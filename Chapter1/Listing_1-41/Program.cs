@@ -12,6 +12,7 @@ namespace Chatper1.Listing_1_41
         {
             Task task1 = Task.Run(() =>
             {
+                // Interlocked.CompareExchange(ref value, 2, 1);
                 if (value == 1)
                 {
                     // Removing the following line will change the output
