@@ -18,18 +18,18 @@ namespace Chapter1.Listing_1_44
                     Console.WriteLine("*");
                     Thread.Sleep(1_000);
                 }
+                Console.WriteLine("Cancellation requested");
                 cancellationToken.ThrowIfCancellationRequested();
-            }, cancellationToken)
-            .ContinueWith((continuationTask) =>
+            }, cancellationToken);
+            Task continued = task.ContinueWith((continuationTask) =>
             {
-                continuationTask.Exception.Handle(e => true);
                 Console.WriteLine("You have cancelled your task");
             }, TaskContinuationOptions.OnlyOnCanceled);
 
             Console.WriteLine("Press Enter to stop task");
             Console.ReadLine();
             cancellationTokenSource.Cancel();
-            task.Wait();
+            continued.Wait();
             Console.WriteLine("Press any key to exit");
             Console.ReadKey();
         }
